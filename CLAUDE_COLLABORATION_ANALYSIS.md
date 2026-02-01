@@ -4,49 +4,54 @@ This report analyzes the collaboration patterns between human developers and Cla
 
 ## Summary Statistics
 
-Total commits analyzed: 400
-Number of Claude co-authored commits found: 68
-Percentage of commits with Claude collaboration: 17%
-Number of unique human collaborators who worked with Claude: 13
+Total commits analyzed: 471
+Number of Claude co-authored commits found: 51
+Percentage of commits with Claude collaboration: 11%
+Number of unique human collaborators who worked with Claude: 12
 
 ## Top Claude Collaborators
 
 | Developer | GitHub Username | Claude Collaborations |
 |-----------|----------------|----------------------|
-| Boris Cherny | bcherny | 31 |
-| Ashwin Bhat | ashwin-ant | 7 |
-| Kurt Carpenter | ant-kurt | 5 |
+| Boris Cherny | bcherny | 17 |
+| Ashwin Bhat | ashwin-ant | 6 |
+| Franklin Volcic | fvolcic | 4 |
 
 ## Methodology
 
-This analysis was performed by examining all commits in the repository and identifying those containing the signature "Co-Authored-By: Claude <noreply@anthropic.com>" in their commit messages. This signature indicates that Claude assisted in creating or modifying the code in that commit.
+This analysis was performed by examining all 471 commits in the repository and identifying those containing the signature "Co-Authored-By: Claude <noreply@anthropic.com>" in their commit messages. This signature indicates that Claude assisted in creating or modifying the code in that commit.
 
-## Additional Insights
-
-### Collaboration Patterns Observed
-
-- **Workflow Automation**: Many Claude collaborations focus on GitHub Actions workflows, including issue management, duplicate detection, and automated triage systems
-- **Plugin Development**: Significant collaboration on Claude Code plugin ecosystem, including plugin-dev toolkit, hookify, and ralph-wiggum plugins
-- **DevContainer Improvements**: Multiple Claude-assisted commits improving the development container setup, firewall configuration, and Docker DNS handling
-- **Code Review Features**: Collaboration on automated PR review functionality with inline comments and suggestions
-
-### Human Collaborators List
+## Complete Collaborators List
 
 The following developers have collaborated with Claude on this repository:
 
-1. **bcherny** (Boris Cherny) - 31 collaborations - Primary focus on issue management workflows
-2. **ashwin-ant** (Ashwin Bhat) - 7 collaborations - Focus on workflow automation and plugin bundling
-3. **ant-kurt** (Kurt Carpenter) - 5 collaborations - DevContainer and infrastructure improvements
-4. **hackyon-anthropic** (JB) - 4 collaborations - Claude Code action workflows
-5. **dhollman** (Daisy S. Hollman) - 4 collaborations - Plugin development (plugin-dev, hookify, ralph-wiggum)
-6. **ThariqS** (Thariq Shihipar) - 3 collaborations - Frontend design plugin
-7. **catherinewu** (Cat Wu) - 3 collaborations - Oncall triage automation
-8. **fvolcic** (Franklin Volcic) - 3 collaborations - Code review inline comments
-9. **ddworken** (David Dworken) - 3 collaborations - Security guidance and duplicate detection
+1. **bcherny** (Boris Cherny) - 17 collaborations - Primary focus on issue management workflows, duplicate detection, and README updates
+2. **ashwin-ant** (Ashwin Bhat) - 6 collaborations - Focus on workflow automation, plugin bundling, and stale issue management
+3. **fvolcic** (Franklin Volcic) - 4 collaborations - Code review inline comments and suggestions functionality
+4. **dhollman** (Daisy S. Hollman) - 3 collaborations - Plugin development (plugin-dev, hookify, ralph-wiggum)
+5. **hackyon-anthropic** (JB) - 3 collaborations - Claude Code action workflows and OIDC authentication
+6. **ant-kurt** (Kurt Carpenter) - 3 collaborations - DevContainer improvements and VS Code marketplace integration
+7. **catherinewu** (Cat Wu) - 2 collaborations - Oncall triage automation
+8. **ThariqS** (Thariq Shihipar) - 2 collaborations - Frontend design plugin
+9. **ddworken** (David Dworken) - 2 collaborations - Security guidance and duplicate validation
 10. **bogini** (inigo) - 2 collaborations - Workflow cleanup and issue templates
-11. **jamestrew** (James Trew) - 1 collaboration - Portable shebang fixes
-12. **shota-0129** - 1 collaboration - Docker DNS protection
-13. **toshitanaa** (Toshiyuki Tanaka) - 1 collaboration - DevContainer environment variables
+11. **jamestrew** (James Trew) - 1 collaboration - Portable shebang fixes for plugin hooks
+12. **shota-0129** - 1 collaboration - Docker DNS protection in firewall script
+
+## Collaboration Patterns Observed
+
+### Primary Focus Areas
+
+- **Workflow Automation**: Many Claude collaborations focus on GitHub Actions workflows, including issue management, duplicate detection, oncall triage, and automated labeling systems
+- **Plugin Development**: Significant collaboration on Claude Code plugin ecosystem, including plugin-dev toolkit, hookify, and ralph-wiggum plugins
+- **DevContainer Improvements**: Multiple Claude-assisted commits improving the development container setup, firewall configuration, and Docker DNS handling
+- **Code Review Features**: Collaboration on automated PR review functionality with inline comments, suggestions, and confidence-based scoring
+
+### Notable Claude Collaboration Highlights
+
+1. **Issue Management System**: Boris Cherny worked extensively with Claude to build comprehensive issue duplicate detection, auto-closing, and triage workflows
+2. **Plugin Marketplace**: Daisy Hollman collaborated with Claude on multiple production-ready plugins for the Claude Code marketplace
+3. **Code Review Automation**: Franklin Volcic partnered with Claude to develop inline comment capabilities with committable suggestions
 
 ---
-*Report generated automatically by analyzing commit history patterns.*
+*Report generated by analyzing the complete commit history of anthropics/claude-code repository.*
