@@ -18,10 +18,10 @@ This document tracks major feature additions across repository branches. It prov
 
 The shell completion functionality was added in version 2.1.21 to enhance the command-line experience. Key features include:
 - Fixed shell completion cache files being truncated on exit
-- Support for full-width (zenkaku) number input from Japanese IME
-- Improved read/search progress indicators
+- Support for full-width (zenkaku) number input from Japanese IME in option selection prompts
+- Improved read/search progress indicators showing "Reading…" while in progress and "Read" when complete
 
-This feature was released on 2026-01-28 as part of the v2.1.21 release, tagged at commit `8c48d2f508be0b63cbb5b5cd6b71d700d71c5b66`.
+This feature was released on 2026-01-28 as part of the v2.1.21 release, documented in commit `8c48d2f508be0b63cbb5b5cd6b71d700d71c5b66`.
 
 ### CHANGELOG Version 1.0.65
 
@@ -34,11 +34,11 @@ The commit `3680637065d6cb0facf2f0746315127cd86cf034` was made by GitHub Actions
 ### Rust Extraction Improvements
 
 Workflow improvements for code extraction were implemented to enhance cross-platform portability:
-- Replaced hardcoded shebangs with portable alternatives (#!/usr/bin/env bash)
+- Replaced hardcoded shebangs (#!/bin/bash) with portable alternatives (#!/usr/bin/env bash)
 - Improved cross-system compatibility for plugin hooks
-- Enhanced file path suggestion performance with native Rust-based fuzzy finder (added in v2.0.34)
+- Enhanced file path suggestion performance with native Rust-based fuzzy finder (documented in v2.0.34)
 
-The commit `3af8ef29be10d2f0dc98ee5db4ae7e9558ff48e5` by jamestrew on 2025-11-05 addresses portable shebang improvements.
+The commit `3af8ef29be10d2f0dc98ee5db4ae7e9558ff48e5` by jamestrew on 2025-11-05 addresses portable shebang improvements for better portability across different systems.
 
 ---
 
